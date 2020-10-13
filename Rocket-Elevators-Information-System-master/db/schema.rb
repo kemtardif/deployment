@@ -11,6 +11,7 @@
 # It's strongly recommended that you check this file into your version control system.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 2020_10_12_181839) do
 
   create_table "quotes", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -44,6 +45,13 @@ ActiveRecord::Schema.define(version: 2020_10_12_212013) do
     t.string "username"
     t.string "password_digest"
 >>>>>>> ecc63be94ef74b46a5cfcb4d45cc7649d1336ef3
+=======
+ActiveRecord::Schema.define(version: 2020_10_12_130241) do
+
+  create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "username"
+    t.string "password_digest"
+>>>>>>> a4bfa18fe3a233263b10505b226355accf0b63cd
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
