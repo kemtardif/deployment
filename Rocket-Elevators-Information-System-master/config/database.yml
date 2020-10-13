@@ -14,10 +14,8 @@ default: &default
   encoding: utf8
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   username: root
-  password: mermaid
-  socket: /var/run/mysqld/mysqld.sock
+  password: Louisfelix95
 
-development:
   <<: *default
   database: RocketElevatorsInformationSystem_development
 

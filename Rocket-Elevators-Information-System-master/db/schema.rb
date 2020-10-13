@@ -10,6 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 2020_10_12_181839) do
 
   create_table "quotes", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -29,6 +30,20 @@ ActiveRecord::Schema.define(version: 2020_10_12_181839) do
     t.decimal "installationCost", precision: 10, scale: 2
     t.decimal "totalPrice", precision: 10, scale: 2
     t.string "legitexemple"
+=======
+ActiveRecord::Schema.define(version: 2020_10_12_212013) do
+
+  create_table "employeelogins", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "username"
+    t.string "pasword_digest"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "eusers", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "username"
+    t.string "password_digest"
+>>>>>>> ecc63be94ef74b46a5cfcb4d45cc7649d1336ef3
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
