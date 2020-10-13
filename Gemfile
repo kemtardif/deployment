@@ -5,6 +5,14 @@ ruby '2.7.1'
 
 gem 'devise'
 
+gem 'sassc', '~> 2.1.0'
+
+gem 'remotipart', github: 'mshibuya/remotipart'
+
+gem 'rails_admin', github: 'sferik/rails_admin'
+
+gem 'rails_admin_rollincode', '~> 1.0'
+
 gem 'cancancan', '~> 1.10'
 
 gem 'rolify'
@@ -30,6 +38,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'bootstrap-sass', '~> 3.3.6'
+
+
 
 
 
