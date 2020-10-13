@@ -12,10 +12,25 @@
 
 ActiveRecord::Schema.define(version: 2020_10_12_181839) do
 
-  create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.string "name"
-    t.decimal "salary", precision: 10
-    t.decimal "urmama", precision: 10
+  create_table "quotes", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "userName"
+    t.string "buildingType"
+    t.integer "apartmentNumbers"
+    t.integer "numberOfFloors"
+    t.integer "numberOfBasements"
+    t.integer "numberOfStore"
+    t.integer "numberCages"
+    t.integer "parkingLevels"
+    t.integer "numberOfCompanies"
+    t.integer "occupantsPerFloor"
+    t.integer "estimatedCagesNeeded"
+    t.string "packageSelection"
+    t.decimal "elevatorPrice", precision: 10, scale: 2
+    t.decimal "installationCost", precision: 10, scale: 2
+    t.decimal "totalPrice", precision: 10, scale: 2
+    t.string "legitexemple"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

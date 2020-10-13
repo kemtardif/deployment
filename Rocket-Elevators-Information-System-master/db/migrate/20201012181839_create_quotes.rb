@@ -1,4 +1,4 @@
-class CreateUsers < ActiveRecord::Migration[5.2]
+class CreateQuotes < ActiveRecord::Migration[5.2]
   def change
     create_table :quotes do |t|
       t.string :userName
@@ -16,6 +16,7 @@ class CreateUsers < ActiveRecord::Migration[5.2]
       t.decimal :elevatorPrice, precision:10, scale:2
       t.decimal :installationCost, precision:10, scale:2
       t.decimal :totalPrice, precision:10, scale:2
+      t.string :legitexemple
       t.timestamps
     end
   end
