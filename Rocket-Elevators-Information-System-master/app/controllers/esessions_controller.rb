@@ -10,7 +10,7 @@ class EsessionsController < ApplicationController
 
     if @euser && @euser.authenticate(params[:password])
 
-       sessions[:user_id] = @euser.id
+       session[:user_id] = @euser.id
 
        redirect_to '/welcome'
 

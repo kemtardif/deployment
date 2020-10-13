@@ -6,6 +6,8 @@ class EusersController < ApplicationController
 
     @euser= Euser.new
 
+    @euser.save
+
   end
 
   def create
