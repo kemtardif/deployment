@@ -13,8 +13,28 @@
  *= require_tree .
  *= require_self
  */
- @import "bootstrap-sprockets";
+@import "bootstrap-sprockets";
 @import "bootstrap";
+@import 'custom-forms-v2.scss';
+@import 'demo-menu-blue.scss';
+@import 'essentials';
+@import'header-0';
+@import 'header-1';
+@import 'header-2';
+@import 'layout-dark';
+@import 'layout-datatables.scss';
+@import 'layout-footable-minimal.scss';
+@import 'layout-jqgrid.scss';
+@import 'layout-RTL.scss';
+@import 'layout-shop.scss';
+@import 'layout';
+@import 'plugin-hover-buttons.scss';
+@import 'thematics-construction.scss';
+@import 'layout-font-rewrite';
+@import 'red';
+@import 'blue';
+
+
 
 #main-container {
   position: relative;
