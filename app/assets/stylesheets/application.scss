@@ -14,9 +14,26 @@
  *= require_self
  */
 @import "bootstrap-sprockets";
+<<<<<<< HEAD
 @import 'bootstrap';
 
 
 
+=======
+@import "bootstrap";
+
+
+
+
+
+
+
+
+#main-container  {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+>>>>>>> 832c9f5590d4b3ddbacbdffd1a1c206e910d0bae
 
 

@@ -13,10 +13,14 @@
 //= require rails-ujs
 //= require activestorage
 <<<<<<< HEAD
+<<<<<<< HEAD
 //= require bootstrap-sprockets
 =======
 //= require turbolinks
 >>>>>>> 5639ea000b4c8ce4581bcdd626e8019119868aa8
+=======
+//= require turbolinks
+>>>>>>> 832c9f5590d4b3ddbacbdffd1a1c206e910d0bae
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap-sprockets
