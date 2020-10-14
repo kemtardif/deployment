@@ -12,6 +12,24 @@
 
 ActiveRecord::Schema.define(version: 2020_10_13_220957) do
 
+  create_table "quotes", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "userName"
+    t.string "buildingType"
+    t.integer "apartmentNumbers"
+    t.integer "numberOfFloors"
+    t.integer "numberOfBasements"
+    t.integer "numberOfStore"
+    t.integer "numberCages"
+    t.integer "parkingLevels"
+    t.integer "numberOfCompanies"
+    t.integer "occupantsPerFloor"
+    t.integer "estimatedCagesNeeded"
+    t.string "packageSelection"
+    t.decimal "elevatorPrice", precision: 10, scale: 2
+    t.decimal "installationCost", precision: 10, scale: 2
+    t.decimal "totalPrice", precision: 10, scale: 2
+    t.string "legitexemple"
+
   create_table "admins", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
