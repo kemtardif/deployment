@@ -7,22 +7,6 @@ class QuotesController < ApplicationController
     def new
         @quote = Quote.new
     end
-        t.string :userName
-        t.string :buildingType
-        t.integer :apartmentNumbers
-        t.integer :numberOfFloors
-        t.integer :numberOfBasements
-        t.integer :numberOfStores
-        t.integer :numberCages
-        t.integer :parkingLevels
-        t.integer :numberOfCompanies
-        t.integer :occupantsPerFloor
-        t.integer :estimatedCagesNeeded
-        t.string :packageSelection
-        t.decimal :elevatorPrice, precision:10, scale:2
-        t.decimal :installationCost, precision:10, scale:2
-        t.decimal :totalPrice, precision:10, scale:2
-        t.timestamps
 
     def create
       
@@ -147,17 +131,24 @@ class QuotesController < ApplicationController
           end
         end  
 
-        def index
-            @quote = Quote.all
-        end
+    def index
+        @quote = Quote.all
+    end  
 
-        def save
-            @quote.save
-            respond_to do |format|
-                format.html { redirect_to @quote, notice: 'Quote was created' }
-                format.json { render :show, status: :created, location: @quote }    
-            end
+    def save
+        @quote.save
+        respond_to do |format|
+            format.html { redirect_to @quote, notice: 'Quote created' }
+            format.json { render :show, status: :created, location: @quote }    
         end
-           
+    end
+    
+    def delete
+        @quote.delete
+        respond_to do |format|
+           format.html { redirect_to quotes_url, notice: 'Quote deleted' }
+           format.json { head :no_content }
+        end
+    end
         
     
