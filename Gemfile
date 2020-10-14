@@ -13,7 +13,7 @@ gem 'rails_admin', github: 'sferik/rails_admin'
 
 gem 'rails_admin_rollincode', '~> 1.0'
 
-gem 'cancancan', '~> 1.10'
+gem 'cancancan', '~> 1.10' 
 
 gem 'rolify'
 
