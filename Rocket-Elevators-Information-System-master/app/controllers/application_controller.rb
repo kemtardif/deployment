@@ -1,5 +1,4 @@
 class ApplicationController < ActionController::Base
-<<<<<<< HEAD
 
     before_action :authorized
     helper_method :current_euser
@@ -19,6 +18,3 @@ class ApplicationController < ActionController::Base
     end
 
 end
-=======
-end
->>>>>>> 7a61157b6a9bfb147ba73c36e4ed7b680b02f217
