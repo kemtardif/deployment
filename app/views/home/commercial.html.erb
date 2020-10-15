@@ -1,6 +1,6 @@
 
-  <body class="smoothscroll enable-animation">
-    <!-- SLIDE TOP -->
+
+
     <div id="slidetop">
       <div class="container">
         <div class="row">
@@ -134,37 +134,36 @@
         </header>
         <!-- /Top Nav -->
       </div>
-
       <!-- REVOLUTION SLIDER -->
       <div class="slider fullwidthbanner-container roundedcorners">
         <!--
-    Navigation Styles:
-    
-      data-navigationStyle="" theme default navigation
-      
-      data-navigationStyle="preview1"
-      data-navigationStyle="preview2"
-      data-navigationStyle="preview3"
-      data-navigationStyle="preview4"
-      
-    Bottom Shadows
-      data-shadow="1"
-      data-shadow="2"
-      data-shadow="3"
-      
-    Slider Height (do not use on fullscreen mode)
-      data-height="300"
-      data-height="350"
-      data-height="400"
-      data-height="450"
-      data-height="500"
-      data-height="550"
-      data-height="600"
-      data-height="650"
-      data-height="700"
-      data-height="750"
-      data-height="800"
-  -->
+        Navigation Styles:
+        
+          data-navigationStyle="" theme default navigation
+          
+          data-navigationStyle="preview1"
+          data-navigationStyle="preview2"
+          data-navigationStyle="preview3"
+          data-navigationStyle="preview4"
+          
+        Bottom Shadows
+          data-shadow="1"
+          data-shadow="2"
+          data-shadow="3"
+          
+        Slider Height (do not use on fullscreen mode)
+          data-height="300"
+          data-height="350"
+          data-height="400"
+          data-height="450"
+          data-height="500"
+          data-height="550"
+          data-height="600"
+          data-height="650"
+          data-height="700"
+          data-height="750"
+          data-height="800"
+      -->
         <div
           class="fullwidthbanner"
           data-height="600"
@@ -172,7 +171,7 @@
           data-navigationStyle="preview2"
         >
           <ul class="hide">
-            <!-- Slide 1: Slogan - Lien vers l’offre de services, Lien vers le formulaire de demande de soumission  -->
+            <!-- Slide 1: Slogan - Rocket -->
             <li
               data-transition="parallaxtotop"
               data-slotamount="7"
@@ -181,13 +180,9 @@
               data-title="Rocket Elevators"
             >
               <!-- MAIN IMAGE -->
-              <img
-                src="assets/images/rocketslider.jpeg"
-                alt="cover image"
-                data-bgposition="center"
-                data-bgfit="cover"
-                data-bgrepeat="no-repeat"
-              />
+
+              <%=image_tag "rocketslider.jpeg"%>
+             
 
               <div class="overlay dark-4">
                 <!-- dark overlay [0 to 9 opacity] -->
@@ -324,16 +319,13 @@
                 data-endspeed="300"
                 style="z-index: 1"
               >
-                <img
-                  src="assets/images/rocketlogo.png"
-                  alt=""
-                  style="width: 300px; height: 400px"
-                />
+
+              <%=image_tag "rocketlogo.png", style:"width:300px;height:400px;"%>
+        
               </div>
             </li>
 
-            <!-- Slide 2: Promotion du service pour immeubles résidentiels et lien vers la page de détail du service résidentiel
--->
+            <!-- Slide 2: Residential -->
             <li
               data-transition="parallaxtobottom"
               data-slotamount="7"
@@ -342,13 +334,9 @@
               data-title="Residential Services"
             >
               <!-- MAIN IMAGE -->
-              <img
-                src="assets/images/residentialslider.jpeg"
-                alt="cover image"
-                data-bgposition="Pcenter top"
-                data-bgfit="cover"
-                data-bgrepeat="no-repeat"
-              />
+
+              <%=image_tag "residentialslider.jpeg"%>
+            
               <div class="overlay dark-4">
                 <!-- dark overlay [0 to 9 opacity] -->
               </div>
@@ -402,7 +390,7 @@
               </div>
             </li>
 
-            <!-- Slide 3: Promotion du service pour immeubles corporatifs et lien vers la page de détail du service corporatif -->
+            <!-- Slide 3: Commercial -->
             <li
               data-transition="parallaxtobottom"
               data-slotamount="7"
@@ -411,13 +399,9 @@
               data-title="Commercial Services"
             >
               <!-- MAIN IMAGE -->
-              <img
-                src="assets/images/commercialslider.jpeg"
-                alt="cover image"
-                data-bgposition="Pcenter top"
-                data-bgfit="cover"
-                data-bgrepeat="no-repeat"
-              />
+
+              <%=image_tag "commercialslider.jpeg"%>
+              
               <div class="overlay dark-4">
                 <!-- dark overlay [0 to 9 opacity] -->
               </div>
@@ -481,7 +465,7 @@
             <div class="testimonial">
               <div class="testimonial-content p-0">
                 <br>
-                <p class="lead" style="font-size: 55px; font-weight: 900;"><strong>Residential Services</strong>
+                <p class="lead" style="font-size: 55px; font-weight: 900;"><strong>Commercial Services</strong>
                 </p>
               </center>
               
@@ -490,6 +474,7 @@
          
         </div>
       </section>
+
       <!-- Overview -->
       <section id="about">
         <div class="heading-title heading-dotted text-center">
@@ -730,36 +715,14 @@
     <!-- SCROLL TO TOP -->
     <a href="#" id="toTop"></a>
 
-    <!-- PRELOADER -->
-    <div id="preloader">
-      <div class="inner">
-        <span class="loader"></span>
-      </div>
-    </div>
-    <!-- /PRELOADER -->
-
-    <!-- JAVASCRIPT FILES -->
-    <script>
-      var plugin_path = "assets/plugins/";
-    </script>
-    <script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
-
-    <script src="assets/js/scripts.js"></script>
-
-    <!-- REVOLUTION SLIDER -->
-    <script src="assets/plugins/slider.revolution/js/jquery.themepunch.tools.min.js"></script>
-    <script src="assets/plugins/slider.revolution/js/jquery.themepunch.revolution.min.js"></script>
-    <script src="assets/js/view/demo.revolution_slider.js"></script>
-
-    <!-- PAGELEVEL SCRIPTS -->
-    <script src="assets/js/contact.js"></script>
+  
 
     <!-- 
 			GMAP.JS 
 			http://hpneo.github.io/gmaps/
 		-->
     <script src="//maps.google.com/maps/api/js?key=AIzaSyCqCn84CgZN6o1Xc3P4dM657HIxkX3jzPY"></script>
-    <script src="assets/plugins/gmaps.js"></script>
+
     <script>
       jQuery(document).ready(function () {
         /**
@@ -779,5 +742,3 @@
         });
       });
     </script>
-  </body>
-</html>
