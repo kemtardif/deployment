@@ -77,7 +77,7 @@
             <!-- Logo -->
             <a class="logo float-left" href="index.html">
               <img
-                src="assets/images/rocketlogonoslogan.png"
+                src = <%= asset_path('rocketlogonoslogan.png')%>
                 alt=""
                 style="width: 200px; height: 70px"
               />
@@ -181,7 +181,7 @@
             >
               <!-- MAIN IMAGE -->
 
-              <%=image_tag "rocketslider.jpeg"%>
+              <%= asset_path('rocketslider.jpeg')%>
              
 
               <div class="overlay dark-4">
@@ -320,7 +320,7 @@
                 style="z-index: 1"
               >
 
-              <%=image_tag "rocketlogo.png", style:"width:300px;height:400px;"%>
+             <%= asset_path('rocketlogo.png', style:"width:300px;height:400px")%>
         
               </div>
             </li>
@@ -335,7 +335,7 @@
             >
               <!-- MAIN IMAGE -->
 
-              <%=image_tag "residentialslider.jpeg"%>
+              <%= asset_path('residentialslider.jpeg')%>
             
               <div class="overlay dark-4">
                 <!-- dark overlay [0 to 9 opacity] -->
@@ -400,7 +400,7 @@
             >
               <!-- MAIN IMAGE -->
 
-              <%=image_tag "commercialslider.jpeg"%>
+              <%= asset_path('commercialslider.jpeg')%>
               
               <div class="overlay dark-4">
                 <!-- dark overlay [0 to 9 opacity] -->
