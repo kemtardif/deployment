@@ -14,10 +14,11 @@
  *= require bootstrap.min.css
  *= require blue
  *= require layout
- *= require essentials.css
+ *= require essentials
  *= require extralayers.css
  *= require settings-ie8.css
  *= require settings1.css
+ *= require _layout-font-rewrite.css
  *= require layers
  *= require_self
  */
