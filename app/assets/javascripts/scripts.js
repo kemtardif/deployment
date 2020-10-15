@@ -1,3 +1,4 @@
+
 /** ********************************************** **
 	@Author			Dorin Grigoras
 	@Website		www.stepofweb.com
@@ -43,7 +44,7 @@
 
 	/* Init */
 	jQuery(window).ready(function () {
-
+		
 		// jQuery 3.x do no support size() - should be replaceced with .length
 		// We use this hack to make old plugins working
 		jQuery.fn.extend({
@@ -56,7 +57,7 @@
 		_loadPopperBS4();
 
 		// Load Bootstrap JS
-		loadScript(plugin_path + 'bootstrap/js/bootstrap.min.js', function() {
+		loadScript(plugin_path + 'bootstrap.min.js', function() {
 
 			// Load Material Design Js
 			if(jQuery("body").hasClass('enable-materialdesign')) {

@@ -12,12 +12,19 @@
 
 ActiveRecord::Schema.define(version: 2020_10_13_220957) do
 
+<<<<<<< HEAD
   create_table "admins", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+=======
+  create_table "employees", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+>>>>>>> 874529bdf563a8c488e9e82f006fab26adadc732
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
+<<<<<<< HEAD
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["email"], name: "index_admins_on_email", unique: true
@@ -27,18 +34,7 @@ ActiveRecord::Schema.define(version: 2020_10_13_220957) do
   create_table "employeelogins", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "username"
     t.string "pasword_digest"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "employees", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string "email", default: "", null: false
-    t.string "encrypted_password", default: "", null: false
-    t.string "reset_password_token"
-    t.datetime "reset_password_sent_at"
-    t.datetime "remember_created_at"
+=======
     t.string "firstname"
     t.string "lastname"
     t.string "function"
@@ -46,9 +42,43 @@ ActiveRecord::Schema.define(version: 2020_10_13_220957) do
     t.index ["reset_password_token"], name: "index_employees_on_reset_password_token", unique: true
   end
 
-  create_table "eusers", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.string "username"
-    t.string "password_digest"
+  create_table "quotes", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "userName"
+    t.string "buildingType"
+    t.integer "apartmentNumbers"
+    t.integer "numberOfFloors"
+    t.integer "numberOfBasements"
+    t.integer "numberOfStores"
+    t.integer "numberCages"
+    t.integer "parkingLevels"
+    t.integer "numberOfCompanies"
+    t.integer "occupantsPerFloor"
+    t.integer "estimatedCagesNeeded"
+    t.string "packageSelection"
+    t.decimal "elevatorPrice", precision: 10, scale: 2
+    t.decimal "installationCost", precision: 10, scale: 2
+    t.decimal "totalPrice", precision: 10, scale: 2
+>>>>>>> 874529bdf563a8c488e9e82f006fab26adadc732
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "quotes", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "userName"
+    t.string "buildingType"
+    t.integer "apartmentNumbers"
+    t.integer "numberOfFloors"
+    t.integer "numberOfBasements"
+    t.integer "numberOfStores"
+    t.integer "numberCages"
+    t.integer "parkingLevels"
+    t.integer "numberOfCompanies"
+    t.integer "occupantsPerFloor"
+    t.integer "estimatedCagesNeeded"
+    t.string "packageSelection"
+    t.decimal "elevatorPrice", precision: 10, scale: 2
+    t.decimal "installationCost", precision: 10, scale: 2
+    t.decimal "totalPrice", precision: 10, scale: 2
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

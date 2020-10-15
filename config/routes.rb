@@ -3,5 +3,11 @@ Rails.application.routes.draw do
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   devise_for :users
   
-  root 'welcome#commercial'
+  root 'home#index'
+  get 'home/residential', to: 'home#residential'
+  get '/home/commercial'
+
+  resources :quotes
+
+
 end

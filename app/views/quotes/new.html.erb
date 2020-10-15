@@ -45,6 +45,8 @@
   id="color_scheme"/>
 </head>
 
+<%= form_for @quote do |f| %>
+
 <!-- Building Type Selection -->
 <br>
 <div class="heading-title heading-dotted text-center">
@@ -52,8 +54,8 @@
 </div>
 <center>
       <label for="buildingtype"><strong>Select the Building Type</strong></label>
-      <select id="selectator">
-          <option value="select">Select an Option</option>
+      <select id="selectator" name="buildingType">
+          <option value="">Select an Option</option>
           <option value="residential">Residential</option>
           <option value="commercial">Commercial</option>
           <option value="corporate">Corporate</option>
@@ -286,7 +288,7 @@
 
 
 
-
+<% end %>
 
 
 
