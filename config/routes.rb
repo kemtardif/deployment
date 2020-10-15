@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   root 'home#index'
   get 'home/residential', to: 'home#residential'
   get '/home/commercial'
-
+   
 
   resources :quotes
 
