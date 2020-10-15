@@ -15,6 +15,9 @@
  *= require blue
  *= require layout
  *= require essentials.css
+ *= require extralayers.css
+ *= require settings-ie8.css
+ *= require settings1.css
  *= require layers
  *= require_self
  */

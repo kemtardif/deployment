@@ -14,6 +14,10 @@
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
+//= require plugins/owl-carousel/owl.carousel.js
+//= require plugins/owl-carousel/owl.carousel.min.js
+//= require plugins/slider.revolution/js/jquery.themepunch.revolution.js
+//= require plugins/slider.revolution/js/jquery.themepunch.enablelog.js
 //= require plugins/slider.revolution/js/jquery.themepunch.revolution.min.js
 //= require plugins/slider.revolution/js/jquery.themepunch.tools.min.js
 //= require view/demo.revolution_slider.js
